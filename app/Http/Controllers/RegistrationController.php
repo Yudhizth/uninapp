@@ -33,7 +33,7 @@ class RegistrationController extends Controller
 		{
 			return Redirect::to('home');
 		}
-		return Redirect::to('login')->with('login_error','Username atau Password salah gan');
+		return Redirect::to('login')->with('login_error','Username atau Password salah gans');
 	}
 
 	public function register(){
