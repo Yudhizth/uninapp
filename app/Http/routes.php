@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (Auth::check()){
+            return Redirect::to('home');
+        
+        }else{
+            return Redirect::to('login')->with('login_error','You must login first');
+        }
 });
 
 Route::get('login', 'RegistrationController@login');

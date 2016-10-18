@@ -4,7 +4,7 @@
    <div class="login-box">
         @if (Session::has('register_success'))
 		<div class='col-md-12'>	 			  
-		<div class="alert alert-danger alert-dismissible">
+		<div class="alert alert-success alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             <i class="icon fa fa-ban"></i>
             {{ Session::get('register_success') }}
