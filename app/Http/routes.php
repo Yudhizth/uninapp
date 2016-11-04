@@ -16,8 +16,16 @@ Route::get('/', function () {
             return Redirect::to('home');
         
         }else{
-            return Redirect::to('login')->with('login_error','You must login first');
+            return Redirect::to('login');
         }
+});
+
+Route::get('logout', function(){
+
+    Auth::logout();
+    Session::flush();
+    
+    return Redirect::to('login');
 });
 
 Route::get('login', 'RegistrationController@login');
