@@ -27,6 +27,8 @@ Route::get('register','RegistrationController@register');
 Route::post('register','RegistrationController@store');
 
 Route::get('home','MainController@home');
+
+
 /*
 Route::get('admin', function () {
 	return view('admin_template');
