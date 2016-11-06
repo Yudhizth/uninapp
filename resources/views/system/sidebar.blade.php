@@ -29,11 +29,17 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-th"></i> <span>Widgets</span>
-            <small class="label pull-right bg-green">new</small>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Master Data</span>
+            <i class="fa fa-angle-left pull-right"></i>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('/master/user') }}"><i class="fa fa-circle-o"></i> User</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Role</a></li>
+            
+          </ul>
         </li>
         <li class="treeview">
           <a href="#">
@@ -42,7 +48,7 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="{{ url('/logout') }}"><i class="fa fa-circle-o"></i> ChartJS</a></li>
             <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
