@@ -36,6 +36,7 @@ Route::post('register','RegistrationController@store');
 
 Route::get('home','MainController@home');
 
+Route::get('master/user','MasterController@all');
 
 /*
 Route::get('admin', function () {
