@@ -17,7 +17,7 @@ class MainController extends Controller
             return View::make('home')->with('user',Auth::user());
         
         }else{
-            return Redirect::to('login')->with('login_error','Anda harus login terlebih dahulu');
+            return Redirect::to('login')->with('login_error','Anda harus login terlebih dahulu gan');
         }
     }
 }
